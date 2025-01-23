@@ -3,17 +3,26 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f9f9f9;
+    background: url('img/background/background-1.jpg') no-repeat center center fixed; /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá todo el fondo */
+    color: white; /* Contraste con el fondo */
 }
 
 header {
-    background-color: #007BFF;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
     color: white;
     padding: 20px;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
 }
 
 .logo-container {
@@ -29,70 +38,42 @@ h1 {
 }
 
 .logo img {
-    width: 250px; /* Ancho fijo */
-    height: 200px; /* Mantiene la proporción */
-    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
-    border: 1px solid #ddd; /* Opcional: borde para los logos */
-    border-radius: 8px; /* Opcional: bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+    width: 250px; /* Tamaño fijo */
+    height: 200px; /* Tamaño fijo */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
 }
 
 .logo p {
     margin-top: 10px;
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
     color: white;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-.about {
-    margin: 20px auto;
+.about, .contact {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco translúcido */
     padding: 20px;
-    max-width: 800px;
-    text-align: left;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.about h2 {
+.about h2, .contact h2 {
     font-size: 24px;
-    color: #007BFF;
+    color: #00aaff; /* Dorado */
 }
 
-.about p {
+.about p, .contact p {
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
-}
-
-.contact {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    text-align: left;
-    background-color: #eaf7ff;
-    border: 1px solid #b3d7ff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact h2 {
-    font-size: 24px;
-    color: #007BFF;
-}
-
-.contact p {
-    font-size: 16px;
-    color: #333;
+    color: #ffffff; /* Contraste en textos */
 }
 
 .contact ul {
@@ -106,11 +87,10 @@ footer {
 
 .contact a {
     text-decoration: none;
-    color: #007BFF;
+    color: #00aaff; /* Dorado para enlaces */
     font-size: 16px;
 }
 
 .contact a:hover {
     text-decoration: underline;
 }
-
